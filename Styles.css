@@ -1,0 +1,180 @@
+#Arriba {
+  display: flex;
+  background-color: var(--marca-blanco);
+  border-bottom: 1px solid var(--neutro-borde);
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  margin: auto 0;
+}
+
+.logo img {
+  width: auto;
+  height: 70px;
+}
+
+.logo h1 {
+  font-size: 20px;
+  color: var(--neutro-negro);
+  margin: auto 0 auto 10px;
+}
+
+.menu {
+  display: flex;
+  margin: auto 0 auto 40px;
+}
+
+.menu li {
+  margin: 20px;
+}
+
+.menu li a {
+  color: var(--neutro-menu);
+  font-size: 15px;
+}
+
+.avion-fondo {
+  position: absolute;
+  top: 15px;
+  left: -100px;
+  width: 90px;
+  animation: volar 12s linear infinite;
+  opacity: 0.15;
+}
+
+@keyframes volar {
+  to { left: 100%; }
+}
+
+.botones {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 10px;
+}
+
+.botones button {
+  font-size: 14px;
+  color: var(--marca-blanco);
+  background-color: var(--marca-verde-profundo);
+  border-radius: 200px;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.buscador-hero {
+  background-color: var(--marca-blanco);
+  border: 1px solid var(--marca-arena);
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin: 20px 0 15px 0;
+}
+
+.buscador-hero label {
+  font-size: 14px;
+  color: var(--marca-tierra);
+}
+
+.buscador-hero input {
+  width: 60%;
+  padding: 8px 12px;
+  margin: 8px 10px 0 0;
+  border: 1px solid var(--marca-arena);
+  border-radius: 5px;
+}
+
+.buscador-hero input:focus {
+  border-color: var(--marca-verde);
+  outline: none;
+}
+
+.buscador-hero button {
+  font-size: 14px;
+  color: var(--marca-blanco);
+  background-color: var(--marca-verde);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.buscador-hero button:hover {
+  background-color: var(--marca-verde-oscuro);
+}
+
+.hero-acciones {
+  margin-bottom: 15px;
+}
+
+.hero-acciones button {
+  margin-right: 10px;
+}
+
+.boton-primario,
+.boton-secundario {
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton-primario {
+  background-color: var(--marca-verde);
+  color: var(--marca-blanco);
+  border: none;
+}
+
+.boton-primario:hover {
+  background-color: var(--marca-verde-oscuro);
+}
+
+.boton-secundario {
+  background-color: var(--marca-arena);
+  color: var(--marca-tierra);
+  border: 1px solid var(--marca-verde);
+}
+
+.boton-secundario:hover {
+  background-color: var(--marca-verde);
+  color: var(--marca-blanco);
+}
+
+@media (max-width: 1024px) {
+  .sitio .buscador-hero {
+    padding: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sitio .buscador-hero {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 0.85rem;
+  }
+
+  .sitio .buscador-hero label {
+    grid-column: auto;
+  }
+
+  .sitio .hero-acciones {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .sitio .buscador-hero {
+    padding: 0.8rem;
+  }
+
+  .sitio .hero-acciones {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sitio .hero-acciones .boton-primario,
+  .sitio .hero-acciones .boton-secundario {
+    width: 100%;
+  }
+}

@@ -1,0 +1,42 @@
+
+:root {
+  --marca-verde: #8B9A6E;
+  --marca-verde-oscuro: #707F55;
+  --marca-verde-claro: #F8FAF3;
+  --marca-verde-profundo: #1F3D2B;
+
+  --marca-arena: #EAE2D6;
+  --marca-crema: #F7F2EB;
+  --marca-blanco: #ffffff;
+
+  --marca-tierra: #4A4A3F;
+  --marca-tierra-oscuro: #33332B;
+
+  --neutro-texto: #555555;
+  --neutro-texto-suave: #666666;
+  --neutro-texto-tenue: #777777;
+  --neutro-gris: #888888;
+  --neutro-gris-claro: #999999;
+  --neutro-fondo: #EEEEEE;
+  --neutro-fondo-suave: #FAFAFA;
+  --neutro-borde: #E5E5E5;
+  --neutro-oscuro: #222222;
+  --neutro-negro: #1A1A1A;
+  --neutro-titulo: #333333;
+  --neutro-menu: #4A4A4A;
+
+  --marca-terracota: #C56B4A;
+
+  --velo-imagen: rgba(20, 20, 15, 0.45);
+  --velo-imagen-fuerte: rgba(20, 20, 15, 0.75);
+  --velo-degradado-inicio: rgba(20, 20, 15, 0);
+  --velo-degradado-fin: rgba(20, 20, 15, 0.85);
+
+  --sombra-tarjeta: 0 10px 24px rgba(20, 20, 15, 0.12);
+  --sombra-modal: 0 15px 35px rgba(0, 0, 0, 0.25);
+
+  --transicion-tarjeta: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  --transicion-imagen: transform 0.4s ease;
+
+  --anillo-foco: 3px;
+}
